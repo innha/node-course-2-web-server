@@ -50,21 +50,21 @@ app.get('/', (req, res) => {
   res.render('home.hbs', {
     pageTitle: 'Home Page',
     welcomeMessage: 'Welcome to my website!'
-  })
+  });
 });
 
 app.get('/about', (req, res) => {
   // res.send('About page');
   res.render('about.hbs', {
     pageTitle: 'About Page'
-  })
+  });
 });
 
 app.get('/projects', (req, res) => {
   res.render('projects.hbs', {
     pageTitle: 'Projects Page',
     pageContent: 'Our portfolio'
-  })
+  });
 });
 
 app.get('/bad', (req, res) => {
